@@ -24,8 +24,6 @@ int main(void)
 		printf("\tgot inside while loop\n");
 		if (dir == NULL)
 		{
-			printf("\t dir == NULL\n");
-			_print_liststr(head);
 			break;
 		}
 		printf("\t dir: %s\n", dir);
@@ -33,6 +31,7 @@ int main(void)
 		if (add_result == NULL)
 			return (-1);
 		printf("\t node added\n");
+		printf("\t node: %s\n", add_result->str);
 		dir = strtok(NULL, ":");
 	}
 
