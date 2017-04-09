@@ -5,7 +5,7 @@
  * @str: string to tokenize
  * @delim; delimiter to use for the tokens
  *
- * Return: 0 (SUCCESS), -1 (FIALURE)
+ * Return: 0 (SUCCESS), -1 (FAILURE)
  */
 int main(void)
 {
