@@ -18,23 +18,23 @@ list_t *_add_node_end(list_t *head, char *str)
 	{
 		return (NULL);
 	}
-			  new_last->str = str;
-			  if (new_last->str == NULL)
-			  {
-				  free(new_last);
-				  return (NULL);
-			  }
+	new_last->str = str;
+	if (new_last->str == NULL)
+	{
+		free(new_last);
+		return (NULL);
+	}
 
-			  new_last->len = _strlen_rec(str);
-			  new_last->next = NULL;
+	new_last->len = _strlen_rec(str);
+	new_last->next = NULL;
 
-			  if (head == NULL)
-			  {
-				  head = new_last;
-				  return (new_last);
-			  }
-			  while (temp->next != NULL)
-				  temp = temp->next;
-			  temp->next = new_last;
-			  return (new_last);
+	if (head == NULL)
+	{
+		head = new_last;
+		return (new_last);
+	}
+	while (temp->next != NULL)
+		temp = temp->next;
+	temp->next = new_last;
+	return (new_last);
 }
