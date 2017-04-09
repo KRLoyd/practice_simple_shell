@@ -1,4 +1,4 @@
-All files are compiled with `gcc -Wall -Wextra -Werror -pedantic' 
+All files are compiled with `gcc -Wall -Wextra -Werror -pedantic'
 
 
 ## Main Files
@@ -18,13 +18,13 @@ Program that prints the PID of the parent process.
 Shell script that prints the maximum value a process ID can be.
 
 #### `av.c`
-Program that prints all the arguments passed to it. 
+Program that prints all the arguments passed to it.
 
 #### 'prompt.c'
 Program that prints a prompt, waits for the user to enter a command, and then prints the command on the next line.
 
 #### `strtok.c`
-Function that splits a string. 
+Function that splits a string.
 * Return: pointer to the array of each word of the string
 
 #### `example_main_env.c`
