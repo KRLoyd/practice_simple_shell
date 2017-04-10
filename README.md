@@ -52,8 +52,7 @@ Function that builds a linked list of the `PATH` directories.
 ## Secondary Files
 
 #### `my_test_main.c`
-Functions to test each file in the Main Files list.
-* Note: Functions are commented out, remove the comments for the specific function you wish to test.
+Function template to test each files in the Main Files list.
 
 #### `_add_node_end.c`
 Function that adds a node at the end of a list_t list.
