@@ -8,6 +8,7 @@
 int main(void)
 {
 
+
 /* test _getenv.c */
 	char *name;
 	char *found_variable;

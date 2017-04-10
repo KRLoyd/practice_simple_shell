@@ -6,7 +6,7 @@
  * @s2: second string
  * @n: number of bytes to compare
  *
- * Return: 0 (SUCCESS, Match up to n), -1 (FAILURE, do not match up to n)
+ * Return: 0 (SUCCESS, Match up to n), -1 (FAILURE)
  */
 int _strncmp(char *s1, char *s2, unsigned int n)
 {

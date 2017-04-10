@@ -4,7 +4,7 @@
  * @head: first element of the list
  * @str: string to add to node
  *
- * Return: address of new node (SUCCESS), NULL (FAILURE)
+ * Return: pointer to the added node (SUCCESS), NULL (FAILURE)
  */
 list_t *_add_node_end(list_t *head, char *str)
 {
