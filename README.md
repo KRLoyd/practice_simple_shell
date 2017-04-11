@@ -59,6 +59,11 @@ Function that adds a node at the end of a list_t list.
 * Prototype: `list_t *_add_node_end(list_t *head, char *str);`
   * Return: pointer to the added node (SUCCESS), NULL (FAILURE)
 
+#### `_strcpy.c`
+Copies string pointed to by second string to buffer pointed to by first string.
+* Prototype: `char *_strcpy(char *dest, char *src);
+* Return: pointer to dest
+
 #### `_strlen_rec.c`
 Finds the length of a string recursively.
 * Prototype: `int _strlen_rec(char *s);`
