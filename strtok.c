@@ -1,7 +1,7 @@
 #include "test_shell.h"
 
 /**
- * main - tokenize a string and return a pointer to the array
+ * main - tokenize a string
  * @str: string to tokenize
  * @delim; delimiter to use for the tokens
  *
