@@ -36,6 +36,10 @@ Program that prints the environment using global variable `environ`.
 #### `env_vs_environ.c`
 Program that prints the address of `env` and `environ`.
 
+#### `f_w_e.c`
+Program that executes `ls -l /tmp` 5 times in different child processes.
+
+
 #### `_getenv.c`
 Function that gets an environment variable without using `getenv`.
 * Prototype: `char *_getenv(const char *name);`
