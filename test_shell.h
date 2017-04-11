@@ -38,6 +38,8 @@ void error_handle(int num, int fd);
 char *_getenv(const char *name);
 size_t _print_liststr(list_t *h);
 int _setenv(const char *name, const char *value, int overwrite);
+char *_strcat(char *dest, char *src);
+char *_strcpy(char *dest, char *src);
 int _strncmp(char *s1, char *s2, unsigned int n);
 int _strlen_rec(char *s);
 #endif /* __TEST_SHELL__ */
