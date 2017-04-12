@@ -5,24 +5,22 @@
  *
  * Return: 0
  */
+
 int main(void)
 {
+	list_t *linked_dirs;
+	char *which_result;
 
-
-/* test _getenv.c */
-	char *name;
-	char *found_variable;
-
-	name = "PATH";
-	found_variable = _getenv(name);
-	printf("%s\n", found_variable);
-
-/* test _strnlen_rec.c */
-/**	char *name;
-	unsigned int len;
-
-	name = "Sam";
-	len = _strlen_rec(name);
-	printf("len: %d\n", len); **/
+	linked_dirs = _link_path();
+	if (linked_dirs == NULL)
+		printf("could not create linked list\n");
+	else
+	{
+		which_result = _which("hello", linked_dirs);
+		if (which_result == NULL)
+			printf("Error\n");
+		else
+			printf("which_result: %s\n", which_result);
+	}
 	return (0);
 }
