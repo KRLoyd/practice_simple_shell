@@ -7,7 +7,10 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <string.h>
+#include <sys/wait.h>
 #define BUFSIZE 1024
+#define ENV extern char **environ
+#define PROMPT "$ "
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
@@ -36,6 +39,7 @@ list_t *_add_node_end(list_t *head, char *str);
 list_env *_env_add_node(list_env *head, char *name, char *value);
 void error_handle(int num, int fd);
 char *_getenv(const char *name);
+list_t _link_path(const char *str);
 size_t _print_liststr(list_t *h);
 int _setenv(const char *name, const char *value, int overwrite);
 char *_strcat(char *dest, char *src);
