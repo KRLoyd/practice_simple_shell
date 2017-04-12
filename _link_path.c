@@ -16,7 +16,6 @@ list_t *_link_path(void)
 	to_link = _getenv("PATH");
 	if (to_link == NULL)
 	{
-		printf("Error 1");
 		return (NULL);
 	}
 
@@ -34,13 +33,10 @@ list_t *_link_path(void)
 			add_result =  _add_node_end(&head, dir);
 			if (add_result == NULL)
 			{
-				printf("Error 1");
 				return (NULL);
 				}
 		}
 		dir = strtok(NULL, ":");
 	}
-	nodes =	_print_liststr(head);
-	printf("Nodes: %lu\n", nodes);
 	return (head);
 }
