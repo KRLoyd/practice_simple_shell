@@ -7,13 +7,13 @@
  *
  * Return: 0 (SUCCESS), -1 (FAILURE)
  */
-int main(void)
+int prompt(void)
 {
 	char *buffer;
 	size_t size;
 
 
-	printf("$ ");
+	printf(PROMPT);
 
 	if (getline(&buffer, &size, stdin) == -1)
 		return (-1);
