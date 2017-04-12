@@ -6,12 +6,12 @@
  *
  * Return: pointer to the added node (SUCCESS), NULL (FAILURE)
  */
-list_t *_add_node_end(list_t *head, char *str)
+list_t *_add_node_end(list_t **head, char *str)
 {
 	list_t *new_last;
 	list_t *temp;
 
-	temp = head;
+	temp = *head;
 
 	new_last = malloc(sizeof(list_t));
 	if (new_last == NULL)
@@ -28,9 +28,9 @@ list_t *_add_node_end(list_t *head, char *str)
 	new_last->len = _strlen_rec(str);
 	new_last->next = NULL;
 
-	if (head == NULL)
+	if (*head == NULL)
 	{
-		head = new_last;
+		*head = new_last;
 		return (new_last);
 	}
 	while (temp->next != NULL)
