@@ -11,6 +11,7 @@
 #define BUFSIZE 1024
 #define ENV extern char **environ
 #define PROMPT "$ "
+#define BUFSIZE 1024
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
