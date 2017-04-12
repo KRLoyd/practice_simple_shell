@@ -2,9 +2,9 @@
 /**
  * main - create a linked list of directories contained in PATH
  *
- * Return: 0
+ * Return: pointer to the first element in the list or NULL
  */
-int main(void)
+list_t *_link_path(void)
 {
 	char *to_link;
 	char *dir;
@@ -14,26 +14,22 @@ int main(void)
 	head = NULL;
 	to_link = _getenv("PATH");
 	if (to_link == NULL)
-		return (-1);
+		return (NULL);
 
 
 	dir = strtok(to_link, ":");
 
 	while (to_link != NULL)
 	{
-		printf("\tgot inside while loop\n");
 		if (dir == NULL)
 		{
 			break;
 		}
-		printf("\t dir: %s\n", dir);
 		add_result = _add_node_end(head, dir);
 		if (add_result == NULL)
-			return (-1);
-		printf("\t node added\n");
-		printf("\t node: %s\n", add_result->str);
+			return (NULL);
 		dir = strtok(NULL, ":");
 	}
 
-	return (0);
+	return (head);
 }
